@@ -21,33 +21,33 @@ code {
 
 }
 
-:root{
+:root {
   --primary-hue: 210;
-  --grey-hue: 240;
-  --color-primary: hsl(var(--primary-hue),100%, 50% )
-  --color-primary: hsl(var(--primary-hue),100%, 65% )
+  --gray-hue: 240;
+
+  --color-primary: hsl(var(--primary-hue), 100%, 50%);
+  --color-primary-variant: hsl(var(--primary-hue), 100%, 65%);
   
   --color-secondary: #ffb116;
-  --color-grey-100: hsl(var(--grey-hue),47%, 94%);
-  --color-grey-200: hsl(var(--grey-hue),26%, 75%);
-  --color-grey-300: hsl(var(--grey-hue),24%, 64%);
-  --color-grey-400: hsl(var(--grey-hue),16%, 41%);
-  --color-grey-500: hsl(var(--grey-hue),44%, 25%);
-  --color-grey-600: hsl(var(--grey-hue),48%, 15%);
+  --color-gray-100: hsl(var(--gray-hue), 47%, 94%);
+  --color-gray-200: hsl(var(--gray-hue), 26%, 75%);
+  --color-gray-300: hsl(var(--gray-hue), 24%, 64%);
+  --color-gray-400: hsl(var(--gray-hue), 16%, 41%);
+  --color-gray-500: hsl(var(--gray-hue), 44%, 25%);
+  --color-gray-600: hsl(var(--gray-hue), 48%, 15%);
 
   --container-width-lg: 80%;
   --container-width-md: 90%;
 
   --transition: all 500ms ease;
-
-
 }
+
 body{
-  font-family: 'montserrat','sens-serif';
-  color: var(--color-grey-200);
+  /* font-family: 'montserrat','sens-serif'; */
+  color: var(--color-gray-200);
   list-style: 1.7;
   overflow-x: hidden;
-  background: var(--color-grey-600);
+  background: var(--color-gray-600);
 }
 
 .container{
@@ -57,14 +57,14 @@ body{
 }
 h1, h2, h3, h4, h5{
   line-height: 1.2;
-  color: var(--color-grey-100);
+  color: var(--color-gray-100);
 }
 
 h1{
   font-size: 2rem
 }
 a{
-  color: var(--color-grey-100);
+  color: var(--color-gray-100);
 }
 
 img{
@@ -73,3 +73,33 @@ img{
   width: 100%;
 }
 /* GENEREAL styles */
+
+
+
+
+.btn{
+  width: fit-content;
+  border-radius: 1.5rem;
+  color: var(--color-gray-100);
+  margin: 0 auto;
+  padding: 0.9rem 2rem;
+  background: var(--color-primary);
+  transition: var(--transition);
+}
+.btn:hover{
+  background: var(--color-secondary);
+  color: var(--color-gray-600);
+}
+
+.btn.lg{
+  padding: 1.2rem 3rem;
+  border-radius: 2rem;
+  font-size: 1.1rem;
+}
+.btn.sm{
+  padding: 0.4rem 1.2rem;
+  font-size: 0.9rem;
+}
+.btn.sm:hover{
+  background: var(--color-gray-100);
+}
