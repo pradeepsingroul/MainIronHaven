@@ -43,7 +43,33 @@ code {
 
 }
 body{
-  background-color: var(--color-primary); 
+  font-family: 'montserrat','sens-serif';
+  color: var(--color-grey-200);
+  list-style: 1.7;
+  overflow-x: hidden;
+  background: var(--color-grey-600);
 }
 
+.container{
+  width: var(--container-width-lg);
+  max-width: 1920px;
+  margin-inline: auto;
+}
+h1, h2, h3, h4, h5{
+  line-height: 1.2;
+  color: var(--color-grey-100);
+}
+
+h1{
+  font-size: 2rem
+}
+a{
+  color: var(--color-grey-100);
+}
+
+img{
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
 /* GENEREAL styles */

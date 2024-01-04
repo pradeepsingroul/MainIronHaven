@@ -1,7 +1,9 @@
-import { Link } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 import { routes } from "../data"
 import './Navbar.css'
 import logo from '../images/logo.png'
+
+
 export default function Navbar() {
 
     return <nav>
@@ -11,9 +13,9 @@ export default function Navbar() {
             <Link className="logo" to="/">
                 <img src={logo} alt="" />
             </Link>
-            <ul className="nav_links">
+            <ul className="nav__links">
                 {routes.map((item, index) => {
-                    return <li><Link to={item.path} key={index}>{item.component}</Link></li>
+                    return <li><NavLink to={item.path} className={({isActive})=> isActive ? 'active-nav' : ''} key={index}>{item.component}</NavLink></li>
                 })}
             </ul>
         </div>
