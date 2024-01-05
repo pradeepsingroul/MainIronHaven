@@ -7,6 +7,7 @@ import Contact from "./Contact/Contact";
 import Plan from "./Plans/Plan";
 
 
+
 export default function AllRoutes() {
 
     return <div>

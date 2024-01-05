@@ -12,7 +12,12 @@ code {
     monospace;
 }
 
-*, *::before, *::after{
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
   margin: 0;
   border: 0;
   list-style: none;
@@ -27,8 +32,8 @@ code {
 
   --color-primary: hsl(var(--primary-hue), 100%, 50%);
   --color-primary-variant: hsl(var(--primary-hue), 100%, 65%);
-  
-  --color-secondary: #ffb116;
+
+  --color-secondary: #da841b;
   --color-gray-100: hsl(var(--gray-hue), 47%, 94%);
   --color-gray-200: hsl(var(--gray-hue), 26%, 75%);
   --color-gray-300: hsl(var(--gray-hue), 24%, 64%);
@@ -42,7 +47,7 @@ code {
   --transition: all 500ms ease;
 }
 
-body{
+body {
   /* font-family: 'montserrat','sens-serif'; */
   color: var(--color-gray-200);
   list-style: 1.7;
@@ -50,34 +55,41 @@ body{
   background: var(--color-gray-600);
 }
 
-.container{
+.container {
   width: var(--container-width-lg);
   max-width: 1920px;
   margin-inline: auto;
 }
-h1, h2, h3, h4, h5{
+
+h1,
+h2,
+h3,
+h4,
+h5 {
   line-height: 1.2;
   color: var(--color-gray-100);
 }
 
-h1{
+h1 {
   font-size: 2rem
 }
-a{
+
+a {
   color: var(--color-gray-100);
 }
 
-img{
+img {
   display: block;
   object-fit: cover;
   width: 100%;
 }
+
 /* GENEREAL styles */
 
 
 
 
-.btn{
+.btn {
   width: fit-content;
   border-radius: 1.5rem;
   color: var(--color-gray-100);
@@ -86,20 +98,22 @@ img{
   background: var(--color-primary);
   transition: var(--transition);
 }
-.btn:hover{
+
+.btn:hover {
   background: var(--color-secondary);
   color: var(--color-gray-600);
 }
 
-.btn.lg{
+/* .btn.lg{
   padding: 1.2rem 3rem;
   border-radius: 2rem;
   font-size: 1.1rem;
-}
-.btn.sm{
+} */
+.btn.sm {
   padding: 0.4rem 1.2rem;
   font-size: 0.9rem;
 }
-.btn.sm:hover{
+
+.btn.sm:hover {
   background: var(--color-gray-100);
 }
