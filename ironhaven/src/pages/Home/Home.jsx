@@ -1,3 +1,4 @@
+import FAQs from '../../components/FAQs'
 import OurValues from '../../components/OurValues'
 import Programs from '../../components/Programs'
 import ironMan from '../../images/IronMan.png'
@@ -13,7 +14,7 @@ export default function Home() {
                 <div className="main__header-left">
                     <h4>#100DaysOfWorkout</h4>
                     <h1>Join the Legends of fitness world</h1>
-                    <p>"Redefine Your Limits: Sculpt Your Ideal Body and Boost Your Well-being with Our State-of-the-Art Gym Facilities and Personalized Fitness Plans!"</p>
+                    <p>"Redefine your limits: sculpt your ideal body and boost your well-being with our state-of-the-Art gym facilities and personalized Fitness plans!"</p>
                     <button className='btn lg'>Get Started</button>
                 </div>
                 <div className="main__header-right">
@@ -28,6 +29,7 @@ export default function Home() {
         </header>
         <Programs />
         <OurValues/>
+        <FAQs/>
     </div>
 
 

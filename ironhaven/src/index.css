@@ -79,6 +79,12 @@ h5 {
   line-height: 1.2;
   color: var(--color-gray-100);
 }
+p{
+  color: var(--color-gray-200);
+  font-family:sans-serif;
+  font-style: italic;
+  text-align: left;
+}
 
 h1 {
   font-size: 2rem
