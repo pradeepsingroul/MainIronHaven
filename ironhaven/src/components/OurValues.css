@@ -1,0 +1,50 @@
+.values {
+    display: grid;
+    grid-template-columns: 36% 50%;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px red solid; */
+
+}
+
+.values__wrapper {
+    gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.valueImages {
+    display: flex;
+    height: 600px;
+    grid-template-columns: repeat(5,1fr);
+   
+    /* border: 1px solid red; */
+    overflow:visible;
+}
+
+.valueCard {
+
+    background-image: none;
+    height: fit-content;
+    padding-top: 0px;
+}
+
+.valueCard .date-box {
+    top: -20px;
+}
+
+.img__values {
+    border-radius: 1rem;
+    width: 18%;
+    height: 100%;
+    /* display: block; */
+    
+    /* display: block; */
+    transition:  0.2s ease-in-out;
+}
+.img__values:hover{
+    width: 60%; /* Increase the width on hover */
+   
+   
+}
