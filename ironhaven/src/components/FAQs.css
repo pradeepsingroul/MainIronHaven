@@ -1,0 +1,9 @@
+.faqs__wrapper{
+    display: grid;
+    gap: 30px;
+    align-items: flex-start;
+    /* border: 1px red solid; */
+    justify-content: space-around;
+    grid-template-columns: repeat(2,1fr);
+}
+
