@@ -1,7 +1,8 @@
+import OurValues from '../../components/OurValues'
+import Programs from '../../components/Programs'
 import ironMan from '../../images/IronMan.png'
 import './Home.css'
-import { programs } from '../../data'
-import Card from '../../UI/Card'
+
 
 export default function Home() {
 
@@ -25,15 +26,8 @@ export default function Home() {
                 </div>
             </div>
         </header>
-        <section className='section__programe'>Programs</section>
-        <div className='container cards__container'>
-            {
-                programs.map((item) => {
-                    return <Card id={item.id} title={item.title} icon={item.icon} info={item.info} path={item.path} months={item.months} date={item.date}/>
-                })
-            }
-
-        </div>
+        <Programs />
+        <OurValues/>
     </div>
 
 

@@ -10,7 +10,8 @@ export const routes = [
 ]
 
 export const programs = [
-    {
+    
+    /*{
         id: 1,
         date: "15",
         months: "Sep",
@@ -25,7 +26,7 @@ export const programs = [
         title: "Program 2",
         info: "Embark on a transformative journey as you focus on building lean muscle and enhancing overall strength. Our 12-week program is crafted to provide a balanced mix of full-body workouts, targeted strength training, and cardiovascular exercises.",
         path: "/programs/222"
-    },
+    },*/
     {
         id: 3,
         date: "12",

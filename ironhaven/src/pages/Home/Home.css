@@ -51,32 +51,21 @@
     filter: blur(3px);
 }
 
-/* .main__header-right:hover .main__header-image {
-    filter:drop-shadow(-12px -12px 2em rgb(231, 145, 58));
-} */
+.main__header-right:hover .main__header-image {
+    filter:drop-shadow(-5px -5px 1rem var(--color-primary));
+}
 
 .main__header-image {
     position: relative;
     /* border: 1px red solid; */
+    transition: all 0.5s;
 }
 
 
 
 
 
-/*section*/
-.section__programe{
-    color: var(--color-gray);
-    font-weight: 400;
-}
 
 
 
 
-
-/* card container */
-.cards__container{
-    display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(4,1fr);
-}

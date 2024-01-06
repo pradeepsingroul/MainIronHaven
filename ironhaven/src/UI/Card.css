@@ -1,18 +1,20 @@
 .parent {
     /* display: flex; */
-    height: 400px;
-    width: 300px;
     padding: 10px;
-    perspective: 1000px;
+    perspective: 1500px;
+    
 }
 
 .card {
     padding-top: 100px;
+    height: 400px;
+    width: 300px;
+    /* border: 1px rgb(23, 226, 8) solid; */
     transform-style: preserve-3d;
     background-image: url("https://images.pexels.com/photos/1629236/pexels-photo-1629236.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
     background-position: center center;
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
     transition: all 0.5s ease-in-out;
     border-radius: 0 50px 0 50px;
 }
@@ -25,11 +27,12 @@
 .content-box {
     height: 100%;
     width: 100%;
+    
     background-color: rgba(0, 0, 0, 0.811);
     border-radius: 0 50px 0 50px;
-    box-shadow: rgba(0, 115, 255, 0.925) 0px 20px 50px -25px;
     transition: all 0.5s ease-in-out;
     padding: 50px 25px 25px 25px;
+    box-shadow: rgba(0, 115, 255, 0.925) 0px 20px 50px -25px;
     transform-style: preserve-3d;
     text-align: le;
 }
@@ -56,6 +59,7 @@
 }
 
 .content-box .card-content:hover {
+    
     transform: translate3d(0px, 0px, 50px);
 }
 
@@ -108,14 +112,4 @@
     padding: 7px 25px;
 }
 
-.card2 {
-    filter: hue-rotate(150deg);
-}
 
-.card3 {
-    filter: hue-rotate(300deg);
-}
-
-.card4 {
-    filter: hue-rotate(90deg);
-}
