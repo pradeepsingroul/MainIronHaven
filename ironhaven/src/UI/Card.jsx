@@ -10,6 +10,7 @@ export default function Card({ id, icon, title, info, path, date, months, classi
     return <div className="parent">
         <div className={`card ${classi}`}>
             <div className="date-box">
+                <img src={path} alt="" />
                 <span className="month">{months}</span>
                 <span className="date">{date}</span>
             </div>
