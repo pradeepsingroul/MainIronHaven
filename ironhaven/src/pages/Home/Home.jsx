@@ -1,6 +1,9 @@
 import FAQs from '../../components/FAQs'
+import Footer from '../../components/Footer'
 import OurValues from '../../components/OurValues'
 import Programs from '../../components/Programs'
+import Testing from '../../components/SliderTesting'
+import Testimonials from '../../components/Testimonial'
 import ironMan from '../../images/IronMan.png'
 import './Home.css'
 
@@ -30,6 +33,8 @@ export default function Home() {
         <Programs />
         <OurValues/>
         <FAQs/>
+        <Testimonials/>
+        <Testing/>
     </div>
 
 
