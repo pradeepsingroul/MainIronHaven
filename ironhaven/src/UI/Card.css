@@ -1,7 +1,10 @@
 .parent {
     /* display: flex; */
-    padding: 10px;
+    padding: 20px 8px;
+    /* border: 1px red solid; */
+    margin: auto;
     perspective: 1500px;
+    
     
 }
 
@@ -31,8 +34,8 @@
     background-color: rgba(0, 0, 0, 0.811);
     border-radius: 0 50px 0 50px;
     transition: all 0.5s ease-in-out;
-    padding: 50px 25px 25px 25px;
-    box-shadow: rgba(0, 115, 255, 0.925) 0px 20px 50px -25px;
+    padding: 40px 15px 15px 15px;
+    box-shadow: rgba(0, 115, 255, 0.925) 0px 15px 30px -20px;
     transform-style: preserve-3d;
     text-align: le;
 }
