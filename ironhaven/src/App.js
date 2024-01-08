@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import AllRoutes from './pages/Routes';
 import About from './pages/About/About';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
     <div className="App">
         <Navbar/>
         <AllRoutes/>
+        <Footer/>
     </div>
   );
 }
