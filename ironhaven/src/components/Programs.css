@@ -2,5 +2,7 @@
 .programs__wrapper{
     display: grid;
     gap: 10px;
+    /* overflow: auto; */
+    border: 1px red solid;
     grid-template-columns: repeat(4,1fr);
 }

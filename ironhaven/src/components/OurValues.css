@@ -8,7 +8,8 @@
 }
 
 .values__wrapper {
-    gap: 15px;
+    gap: 20px 45px;
+    justify-content: space-between;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
@@ -16,7 +17,7 @@
 
 .valueImages {
     display: flex;
-    height: 600px;
+    height: 625px;
     grid-template-columns: repeat(5,1fr);
    
     /* border: 1px solid red; */

@@ -15,7 +15,7 @@ export default function FAQ({ Question, Answer }) {
 
 
     return <article className="faq">
-        <div className='question__sec'>
+        <div className='question__sec' onClick={()=> handleShowing()}>
             <h4>{Question}</h4>
             <button className="faq__icon" onClick={handleShowing}>
                 {show ? <AiOutlineMinus /> : <AiOutlinePlus />}
