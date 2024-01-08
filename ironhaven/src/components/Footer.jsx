@@ -1,69 +1,53 @@
-import React from "react";
-import { FaPhone, FaEnvelope, FaMapMarker, FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
-import './Footer.css'; // Import your footer styles
+import { Link } from "react-router-dom"
+import Logo from '../images/logo.png'
+import { FaLinkedin } from "react-icons/fa"
+import { FaFacebook } from "react-icons/fa"
+import { AiOutlineTwitter } from "react-icons/ai"
+import { AiOutlineInstagram } from "react-icons/ai"
+import './Footer.css'
 
-const Footer = () => {
-  return (
-    <footer className="footer-container">
-      <div className="footer-contact">
-        <h3>Contact Us</h3>
-        <ul>
-          <li>
-            <FaPhone /> Phone: +91 9340724066
-          </li>
-          <li>
-            <FaEnvelope /> Email: info@ironHaven.com
-          </li>
-          <li>
-            <FaMapMarker /> Address: 123 Iron Street, Satna, Madhya Pradesh
-          </li>
-        </ul>
+
+export default function Footer() {
+
+
+
+  return <footer className='footer'>
+    <div className="container footer__container">
+      <article>
+        <Link to='/'  >
+          <img className="footerImage" src={Logo} alt="IronHaven" />
+        </Link>
+        <p>
+        Transforming lives, one rep at a time. Welcome to Ironhaven Gym, where strength meets community, and fitness becomes a lifestyle. Join us in the pursuit of a healthier, happier you. 💪 #IronhavenFitness #StrengthInCommunity        </p>
+        <div className="footer__social">
+          <a href="https://www.linkedin.com/in/pradeepsingroul/" target="_blank" rel="noreferrer noopener"><FaLinkedin /></a>
+          <a href="https://www.facebook.com/pradeep.singroul.33/" target="_blank" rel="noreferrer noopener"><FaFacebook /></a>
+          <a href="https://www.instagram.com/_pradeep_singroul_/" target="_blank" rel="noreferrer noopener"><AiOutlineInstagram /></a>
+          <a href="https://twitter.com/mr_pradeep_mp35" target="_blank" rel="noreferrer noopener"><AiOutlineTwitter /></a>
+        </div>
+      </article>
+      <article>
+        <h4>Permalinks</h4>
+        <Link to='/'><p>Home</p></Link>
+        <Link to='/about'><p>About</p></Link>
+        <Link to='/plans'><p>Plans</p></Link>
+        <Link to='/trainers'><p>Trainers</p></Link>
+        <Link to='/gallery'><p>Gallery</p></Link>
+        <Link to='/contact'><p>Contact</p></Link>
+      </article>
+      <article>
+        <h4>Get In Touch</h4>
+        <Link to='/'><p>Blogs</p></Link>
+        <Link to='/about'><p>Case Studies</p></Link>
+        <Link to='/plans'><p>Events</p></Link>
+        <Link to='/trainers'><p>Communities</p></Link>
+        <Link to='/gallery'><p>FAQs</p></Link>
+      </article>
+      <div className="footer__copyright">
+        <p>
+          <small>2024 PRADEEP SINGROUL &copy; All Rights Reserved</small>
+        </p>
       </div>
-
-      <div className="footer-social">
-        <h3>Follow Us</h3>
-        <ul>
-          <li>
-            <a href="https://www.facebook.com/fitnessplus" target="_blank" rel="noopener noreferrer">
-              <FaFacebook />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/_pradeep_singroul_/" target="_blank" rel="noopener noreferrer">
-              <FaInstagram />
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com/fitnessplus" target="_blank" rel="noopener noreferrer">
-              <FaTwitter />
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div className="footer-links">
-        <h3>Quick Links</h3>
-        <ul>
-          <li>
-            <a href="/">Home</a>
-          </li>
-          <li>
-            <a href="/programs">Programs</a>
-          </li>
-          <li>
-            <a href="/plans">Membership</a>
-          </li>
-          <li>
-            <a href="/contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-
-      <div className="footer-copyright">
-        <p>&copy; 2024 Fitness Plus. All Rights Reserved.</p>
-      </div>
-    </footer>
-  );
-};
-
-export default Footer;
+    </div>
+  </footer>
+}

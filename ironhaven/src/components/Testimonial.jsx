@@ -62,8 +62,8 @@ export default function Testimonials() {
             </Slider>
 
             <div className="testimonials__btn">
-                <button onClick={HandleIndexInc}><FaArrowAltCircleLeft /></button>
-                <button onClick={HandleIndexDec}><FaArrowAltCircleRight /></button>
+                <button onClick={HandleIndexDec}><FaArrowAltCircleLeft /></button>
+                <button onClick={HandleIndexInc}><FaArrowAltCircleRight /></button>
             </div>
         </div>
     </section>

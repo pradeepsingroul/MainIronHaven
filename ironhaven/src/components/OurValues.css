@@ -1,4 +1,5 @@
 .values {
+    padding: 25px;
     display: grid;
     grid-template-columns: 36% 50%;
     align-items: center;
@@ -8,16 +9,17 @@
 }
 
 .values__wrapper {
-    gap: 20px 45px;
+    gap: 20px;
     justify-content: space-between;
     display: grid;
+    /* padding: 10px; */
     grid-template-columns: repeat(2, 1fr);
 
 }
 
 .valueImages {
     display: flex;
-    height: 625px;
+    height: 600px;
     grid-template-columns: repeat(5,1fr);
    
     /* border: 1px solid red; */
@@ -29,6 +31,7 @@
     background-image: none;
     height: fit-content;
     padding-top: 0px;
+    width: 275px;
 }
 
 .valueCard .date-box {

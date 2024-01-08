@@ -1,73 +1,58 @@
-Footer.css
+.footer {
+  background: var(--color-primary);
+  margin-top: 7rem;
+  padding: 4rem 0;
+  color: var(--color-gray-100);
+}
 
-.footer-container {
-    background-color: var(--color-gray-500);
-    color:var(--color-gray-100);
-    padding: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-  }
+.footer__container {
   
-  .footer-contact,
-  .footer-social,
-  .footer-links {
-    flex: 1 1 200px;
-    margin-bottom: 20px;
-  }
-  
-  .footer-contact h3,
-  .footer-social h3,
-  .footer-links h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  .footer-contact ul,
-  .footer-social ul,
-  .footer-links ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .footer-contact li,
-  .footer-social li,
-  .footer-links li {
-    margin-bottom: 8px;
-    display: flex;
-    align-items: center;
-  }
-  
-  .footer-contact svg,
-  .footer-social svg {
-    margin-right: 8px;
-  }
-  
-  .footer-links a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .footer-links a:hover {
-    text-decoration: underline;
-  }
-  
-  .footer-copyright {
-    width: 100%;
-    text-align: center;
-    margin-top: 20px;
-    padding-top: 10px;
-    border-top: 1px solid #555;
-    color: #aaa;
-  }
-  
-  @media (max-width: 768px) {
-    .footer-contact,
-    .footer-social,
-    .footer-links {
-      flex: 1 1 100%;
-    }
-  }
-  
+  display: grid;
+  grid-template-columns: 23rem 1fr 1fr 1fr;
+  gap: 6rem;
+
+/* margin-bottom: 4rem; */
+}
+
+.footer__container article {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.7rem;
+}
+
+.footer__container article p {
+  margin-top: 0.5rem;
+}
+
+.footer__container article h4 {
+  margin-top: 0.6rem;
+  font-size: 1rem;
+}
+
+.footer__social{
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.footer__social a{
+  background: var(--color-gray-100);
+  padding: 0.5rem 0.5rem 0.3rem 0.5rem ;
+  border: 1px solid transparent;
+  border-radius: 0.6rem;
+  transition: var(--transition);
+}
+.footer__social a svg{
+  color: var(--color-gray-600);
+}
+
+.footer__social a:hover{
+  color: var(--color-gray-100);
+  background: transparent;
+}
+
+.footerImage{
+  /* margin-top: 20px; */
+  margin-left: -20px;
+}
